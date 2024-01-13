@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+<style>
+body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        form {
+           
+            display: inline-block;
+            text-align: left;
+              border: 4px solid #ccc;
+               border-radius: 20px;
+              padding:30%;
+        }
+
+        input[type="text"], input[type="password"],input[type="email"] {
+            border-radius: 50px;
+            padding: 5px 30px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            
+        }
+
+        input[type="submit"] {
+            border-radius: 50px;
+            padding: 5px 30px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+
+<body>
+    <div class="container">
+        <h1>Register Form</h1>
+        <form action="register" method="post">
+            FullName:  <input type="text" name="name"><br><br>
+            PhNo:  <input type="text" name="PhNo"><br><br>
+            Email:  <input type="email" name="Email"><br><br>
+            Password:  <input type="password" name="password"><br><br>
+            Gender:  <input type="text" name="Gender"><br><br>
+            Address:  <input type="text" name="Address"><br><br>
+            <input type="submit" value="signup">
+        </form>
+    </div>
+</body>
+</html>

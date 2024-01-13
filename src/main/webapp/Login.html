@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+</head><body>
+<style>
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100	vh;
+    margin: 0;
+   
+  }
+
+  form {
+
+ 	display: inline-block;
+    text-align: left;
+     border: 4px solid #ccc;
+     border-radius: 20px;
+    padding:20px;
+    margin-top:10%;
+  }
+ 
+ input[type="text"]{
+ border: 1px solid #ccc;
+  border-radius: 50px;
+   padding: 7px 50px;
+    
+  }
+  input[type="password"]{
+  border-radius: 50px;
+   padding: 7px 50px;
+   border: 1px solid #ccc;
+  }
+
+  input[type="submit"] {
+    border-radius: 50px; 
+    padding: 5px 30px;
+    cursor: pointer;
+  	margin-top:10%;
+  	
+  	background-color: #4CAF50;
+  	
+  }
+</style>
+<div>
+<h1>Login Form</h1>
+ <form action="http://localhost:8080/webpage/Login" method="post">
+FullName:  <input type="text"name="uname"><br></br>
+Password:  <input type="password"name="password"><br></br>
+<input type="submit"value="Login">
+</form>
+</div>
+</body>
+</html>
