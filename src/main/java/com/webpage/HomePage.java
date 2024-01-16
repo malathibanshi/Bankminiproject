@@ -19,7 +19,7 @@ public class HomePage extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 			
-		response.getWriter().println("hello bl lovers");
+		response.getWriter().println();
 	}
 	
 
