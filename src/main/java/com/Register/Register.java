@@ -23,9 +23,11 @@ public class Register extends HttpServlet {
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.sendRedirect("Login.html");
 		PrintWriter pw=response.getWriter();
 		response.setContentType("text/html");
 
+		
 		String uname=request.getParameter("name");
 		String upn=request.getParameter("PhNo");
 		String uemail=request.getParameter("Email");
