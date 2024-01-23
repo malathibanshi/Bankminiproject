@@ -16,8 +16,13 @@
 <h2>Name:<%=session.getAttribute("uname") %></h2>
 <h2>Cont.no:<%=session.getAttribute("PhNo") %></h2>
 <h2>Email:<%=session.getAttribute("Email") %></h2>
-<button>Logout</button>
+<button onclick="logout()">Logout</button>
 </div>
+<script>
+function logout(){
+	window.location.href="Login.html";
+}
+</script>
 
 
 </body>

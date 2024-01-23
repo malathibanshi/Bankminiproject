@@ -23,7 +23,6 @@ public class Register extends HttpServlet {
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.sendRedirect("Login.html");
 		PrintWriter pw=response.getWriter();
 		response.setContentType("text/html");
 
@@ -54,6 +53,7 @@ public class Register extends HttpServlet {
 				int c=ps.executeUpdate();
 				if(c>0) {
 					pw.println("data is stored");
+					response.sendRedirect("Login.html");
 				}
 				else {
 					pw.println("not stored");
